@@ -1,0 +1,11 @@
+{
+    "name": {
+        "message": "HipChat Webmify",
+        "description" : "Name of extension"
+    },
+
+    "description": {
+        "message": "Embeds webms into HipChat",
+        "description" : "Description of extension"
+    }
+}
