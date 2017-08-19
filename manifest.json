@@ -8,11 +8,16 @@
     "icons": { "48": "img/48.png",
                "128": "img/128.png"},
     "permissions" : [
-        "https://*.hipchat.com/*"
+        "https://*.hipchat.com/*",
+        "storage"
     ],
     "offline_enabled": true,
     "content_scripts": [{
         "matches": ["https://*.hipchat.com/*"],
-        "js": ["content_script.js"]
-    }]
+        "js": ["global.js", "content_script.js"]
+    }],
+    "options_ui": {
+        "page": "options.html",
+        "chrome_style": true
+    }
 }
